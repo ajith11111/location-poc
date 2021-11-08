@@ -29,6 +29,12 @@
                 <action android:name="com.google.android.gms.location.sample.locationupdatesbackgroundkotlin.LocationUpdatesBroadcastReceiver.ACTION_PROCESS_UPDATES" />
             </intent-filter>
         </receiver>
+        <receiver android:name=".receivers.BootCompleteReceiver">
+            <intent-filter>
+                <!-- REGISTER TO RECEIVE BOOT_COMPLETED EVENTS -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
