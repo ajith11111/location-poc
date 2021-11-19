@@ -69,8 +69,8 @@ class MainActivity : AppCompatActivity() {
         initViews()
         initRecyclerView()
         initListeners()
-//        LocationWorker.startPeriodicWorkRequest(applicationContext)
-        registerListenerForLocationUpdates()
+        LocationWorker.startPeriodicWorkRequest(applicationContext)
+//        registerListenerForLocationUpdates()
         checkAndAskForLocationPermissions()
 
     }

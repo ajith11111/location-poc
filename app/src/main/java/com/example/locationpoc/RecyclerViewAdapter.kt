@@ -18,7 +18,8 @@ class CustomRecyclerViewAdapter(context: Context) : RecyclerView.Adapter<CustomR
     }
 
     fun setData(list: List<LocationEntity>) {
-        adapterData = list as ArrayList<LocationEntity>
+        adapterData.clear()
+        adapterData.addAll(list)
         notifyDataSetChanged()
     }
     override fun onBindViewHolder(holder: LocationViewHolder, position: Int) {
